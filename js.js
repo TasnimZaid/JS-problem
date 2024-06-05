@@ -87,10 +87,59 @@ console.log(Math.pow(x,2));
   alert("the summation of two num is : " + sum) ;
 
 
+  // task 2: 
 
+// Use a loop to display the numbers 0 through 5 in a single alert window
 
+// for (let i = 0; i <= 5; i++){
+//     alert(i);
+// }
 
+// Q8: Use a loop to display the numbers 0 through 5 in a single alert window
 
+// let v = "";
+// for (let x = 0; x <= 5; x++) {
+//     v += x + " ";
+// }
+// alert(v);
 
+// //Q9: Use a loop to display the numbers in the range 0…20 that are multiples of 3. 
 
+// for (let y = 0; y <= 20; y++) {
+//     if (y % 3 === 0) {
+//         console.log(y);
+//     }
+// }
 
+// Prompt the user for a number in the range 0…100.  If the number is out of range, display an error message and prompt again until a valid number is entered.  Assume the user enters a number each time
+
+// for (let o = 0 ; o <= 100 ; o++){
+
+//     let require = prompt("Enter any num between 0 to 100");
+//     if(0 <= require && require<= 100){
+//         alert("ypor num is " + require ) ;
+//     }
+//     else{
+//         alert ( "your num. is not in the range")
+//     }
+
+// break;
+
+// }
+
+//  Prompt for an integer, then display the sum of the integers from 0 through the number entered.  For example, if you enter 10, then display 55 which is the sum of   0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 
+
+var sum = 0;
+var userinput = prompt("Enter a number to find the summation of it, please enter 'done' after entering all numbers");
+
+while (userinput !== "done") {
+    var num = parseInt(userinput);
+
+   
+        sum += num;
+   
+
+    userinput = prompt("Enter a number to find the summation of it, please enter 'done' after entering all numbers");
+}
+
+alert("The sum of the entered numbers is: " + sum);
